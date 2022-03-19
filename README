@@ -1,2 +1,6 @@
 ## SpringBoot整合(ES)ElasticSearch7.8
 https://blog.csdn.net/a15119273009/article/details/107841813?spm=1001.2101.3001.6650.11&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-11.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-11.pc_relevant_default&utm_relevant_index=14
+
+
+## 设置副本为0
+curl -XPOST 'http://192.168.227.142:9200/_settings' -H 'Content-Type:application/json' -d '{"index":{"number_of_replicas":0}}'
